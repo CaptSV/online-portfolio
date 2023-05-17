@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simon Valenzuela</title>
+
+    <!-- Bootstrap CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+    />
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Google Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Rajdhani:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Fontawesome kit CDN -->
+    <script
+      src="https://kit.fontawesome.com/d2a586f403.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Scrollreveal JS -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Hamburger CSS -->
+    <link href="/hamburgers-master/dist/hamburgers.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg shadow reveal" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a href="#" class="navbar-brand">
+            <img src="images/srpv-logo.png" class="logo" alt="personal-logo" />
+          </a>
+          <!-- Offcanvass button/hamburger -->
+          <button
+            class="navbar-toggler"
+            id="offcanvasMenu"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- offcanvas menu -->
+          <div
+            class="offcanvas offcanvas-end"
+            id="offcanvasExit"
+            tabindex="-1"
+            id="offcanvasNavbar"
+          >
+            <div class="offcanvas-header">
+              <img src="images/logo-icon-only.png" class="offcanvas-logo" />
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#contact" class="nav-link">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container introbox">
+        <div class="row reveal">
+          <div class="col">
+            <h3 class="display-2 loading">Hello</h3>
+          </div>
+        </div>
+        <div class="row reveal">
+          <div class="col-lg-4"></div>
+          <div class="col-lg-8">
+            <div class="rounded shadow p-5 aboutbox">
+              <p>My name is</p>
+              <h1 class="display-1 primary">Simon Valenzuela.</h1>
+              <h3 class="display-4">Creating digital experiences.</h3>
+              <p>
+                A full-stack developer with concrete experience to build
+                scalable applications with the latest technologies.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- hero section -->
+    <section id="about">
+      <div class="container-fluid text-center my-5 px-5 reveal">
+        <h2 class="title-margin primary">About Me</h2>
+        <div class="row align-items-center my-5">
+          <div class="col-lg-4">
+            <div class="pfp-container">
+              <img
+                src="https://avatars.githubusercontent.com/u/124159621?v=4"
+                class="gray img-fluid rounded"
+                alt="picture-of-me"
+              />
+            </div>
+          </div>
+          <div class="col-lg-8 aboutmetext">
+            <p>
+              I am an experienced full stack developer with a strong background
+              in web application development and design. My expertise is built
+              upon a solid foundation of Computer Science education and
+              continuous learning through platforms like Udemy.
+            </p>
+            <p>
+              With a track record of working on diverse projects, I possess
+              excellent collaboration and communication skills essential for
+              both small and large teams.
+            </p>
+            <p>
+              Apart from coding, I enjoy exploring video games and movies.
+              During my spare time, I focus on enhancing my proficiency in
+              lesser-known languages and exploring new frameworks.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- skills -->
+    <section id="experience">
+      <div class="container reveal">
+        <h2 class="title-margin primary text-center">Experience</h2>
+        <h5 class="text-center w-100 mb-5">
+          Technologies I've worked with but are not limited to.
+        </h5>
+        <div class="row">
+          <div class="col tech">
+            <img
+              src="https://img.icons8.com/color/80/null/html-5--v1.png"
+              alt="html5-img"
+              class="gray"
+            />
+            <img
+              src="https://img.icons8.com/color/80/null/css3.png"
+              alt="css-img"
+              class="gray"
+            />
+            <img
+              src="https://img.icons8.com/color/80/null/javascript--v1.png"
+              alt="js-img"
+              class="gray"
+            />
+            <img
+              src="https://img.icons8.com/color/80/null/bootstrap.png"
+              alt="bs-img"
+              class="gray"
+            />
+            <img
+              src="https://img.icons8.com/color/80/react-native.png"
+              alt="react-native"
+              class="gray"
+            />
+            <img
+              src="https://img.icons8.com/color/80/null/nodejs.png"
+              alt="nodejs-img"
+              class="gray"
+            />
+            <img
+              src="https://img.icons8.com/color/80/000000/express-js.png"
+              class="gray"
+            />
+            <img
+              src="https://img.icons8.com/color/80/null/mongodb.png"
+              alt="mongodb-img"
+              class="gray"
+            />
+            <img
+              src="https://img.icons8.com/color/80/null/sql.png"
+              alt="sql-img"
+              class="gray"
+            />
+            <img
+              src="https://img.icons8.com/color/80/null/mongoose.png"
+              alt="mongoose-img"
+              class="gray"
+            />
+            <img
+              src="https://img.icons8.com/color/80/git.png"
+              alt="git"
+              class="gray"
+            />
+            <img
+              src="https://img.icons8.com/color/80/github.png"
+              alt="github"
+              class="gray"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- recent projects -->
+    <section id="projects">
+      <div class="reveal">
+        <h2 class="title-margin primary text-center">Recent Projects</h2>
+        <div class="container px-5">
+          <div class="row row-cols-1 row-cols-md-2 gy-3">
+            <div class="cols reveal">
+              <div class="project-container">
+                <a
+                  href="https://captsv.github.io/Bootstrap-TBJ/"
+                  target="_blank"
+                >
+                  <img
+                    src="images/tbj-card-img.png"
+                    alt="the burger joint"
+                    class="project-img rounded"
+                  />
+                  <div class="overlay">
+                    <div class="overlay-text">
+                      <p class="h3 fw-bold primary">The Burger Joint</p>
+                      <p class="secondary">Bootstrap HTML CSS</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="cols reveal">
+              <div class="project-container">
+                <a
+                  href="https://captsv.github.io/BootStrap-TinDog/"
+                  target="_blank"
+                >
+                  <img
+                    src="images/tindog-card-img.png"
+                    alt="tindog app landing page"
+                    class="project-img rounded"
+                  />
+                  <div class="overlay">
+                    <div class="overlay-text">
+                      <p class="h3 fw-bold primary">TinDog</p>
+                      <p class="secondary">Bootstrap HTML CSS</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="cols reveal">
+              <div class="project-container">
+                <a
+                  href="https://zingy-zuccutto-33aa45.netlify.app/"
+                  target="_blank"
+                >
+                  <img
+                    src="images/note-card-img.png"
+                    alt="sticky-note app"
+                    class="project-img rounded"
+                  />
+                  <div class="overlay">
+                    <div class="overlay-text">
+                      <p class="h3 fw-bold primary">The Board</p>
+                      <p class="secondary">React Javascript HTML CSS</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="cols reveal">
+              <div class="project-container">
+                <a
+                  href="https://plum-crazy-termite.cyclic.app/"
+                  target="_blank"
+                >
+                  <img
+                    src="images/blog-card-img.png"
+                    alt="blog app"
+                    class="project-img rounded"
+                  />
+                  <div class="overlay">
+                    <div class="overlay-text">
+                      <p class="h3 fw-bold primary">A Simple Blog App</p>
+                      <p class="secondary">NodeJS MongoDB Cyclich.sh</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="cols reveal">
+              <div class="project-container">
+                <a
+                  href="https://nimble-cobbler-8af3b5.netlify.app/"
+                  target="_blank"
+                >
+                  <img
+                    src="images/todolist-card-img.png"
+                    alt="to-do list app"
+                    class="project-img rounded"
+                  />
+                  <div class="overlay">
+                    <div class="overlay-text">
+                      <p class="h3 fw-bold primary">To-Do List App</p>
+                      <p class="secondary">React Javascript HTML CSS</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="cols reveal">
+              <div class="project-container">
+                <a href="https://captsv.github.io/CSS-MySite/" target="_blank">
+                  <img
+                    src="images/css-card-img.png"
+                    alt="first iteration portfolio"
+                    class="project-img rounded"
+                  />
+                  <div class="overlay">
+                    <div class="overlay-text">
+                      <p class="h3 fw-bold primary">First Portfolio</p>
+                      <p class="secondary">HTML CSS</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <footer id="contact">
+      <div class="container text-center reveal">
+        <h2 class="closing-title fw-bold">Connect With Me</h2>
+        <p class="closing-text">
+          Let's work together to achieve your goals and receive top-notch
+          service. Whether you want to collaborate or just touch base, my inbox
+          is always open. I'll respond as quickly as possible!
+        </p>
+        <p>
+          <a
+            href="mailto:simonvalenzuela88@gmail.com"
+            class="btn btn-outline-info btn-lg contact-button"
+            role="button"
+            >Contact</a
+          >
+        </p>
+
+        <div class="neon-bar reveal"></div>
+        <!-- social media bar -->
+        <div class="socials">
+          <a href="https://github.com/CaptSV" target="_blank">
+            <i class="fa-brands fa-github fa-lg icons"></i>
+          </a>
+          <a href="https://twitter.com/codepathfinder" target="_blank">
+            <i class="fa-brands fa-twitter fa-lg icons"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/simonrpvalenzuela/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin fa-lg icons"></i>
+          </a>
+          <a href="https://www.instagram.com/iamcaptsv/" target="_blank">
+            <i class="fa-brands fa-instagram fa-lg icons"></i>
+          </a>
+        </div>
+        <p class="h5 my-3">&copy SimonRPV. All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <!-- back to top arrow -->
+    <a href="#landing">
+      <i class="fa-solid fa-angles-up fa-lg arrowup"></i>
+    </a>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- JS Script -->
+    <script src="index.js"></script>
+  </body>
+</html>

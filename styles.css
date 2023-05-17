@@ -1,0 +1,407 @@
+body {
+    background: linear-gradient(180deg, rgb(17, 30, 67) 10%, rgba(11, 19, 43, 1) 30%);
+    color: #f0f6f6;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.25rem;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    font-size: 2.25rem;
+}
+
+.primary {
+    color: #5299d3;
+}
+
+.secondary {
+    color: #f0f6f6;
+}
+
+.title-margin {
+    margin: 4rem 0;
+}
+
+.nav-link {
+    color: #f0f6f6;
+    font-family: 'Rajdhani', sans-serif;
+    background: linear-gradient(0deg, #fca311, #fca311) no-repeat right bottom / 0 var(--bg-h);
+    transition: background-size 350ms;
+    --bg-h: 2px;
+    padding-bottom: 0;
+}
+
+.nav-link:where(:hover, :focus-visible) {
+    background-size: 100% var(--bg-h);
+    background-position-x: left;
+}
+
+.logo {
+    max-width: 15%;
+    min-width: 10%;
+}
+
+.navbar-nav li {
+    margin: 0 20px;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger7.svg?color=5299d3');
+}
+
+.introbox {
+    padding: 6rem 0;
+}
+
+.aboutmetext {
+    text-align: start;
+}
+
+.tech {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.btn-outline-info {
+    --bs-btn-color: #fca311;
+    --bs-btn-border-color: #fca311;
+    --bs-btn-hover-bg: #fca311;
+    --bs-btn-hover-border-color: #fca311;
+    --bs-btn-active-bg: #fca311;
+}
+
+/* Custom CSS to offcanvas menu  */
+
+.offcanvas {
+    background-color: #0b132b;
+}
+
+.offcanvas-logo {
+    width: 20%;
+}
+
+/* Hello style and animation */
+
+.loading {
+    position: relative;
+    margin-bottom: 0;
+}
+
+.loading:after {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    -webkit-animation: ellipsis steps(4, end) 1700ms infinite;
+    animation: ellipsis steps(4, end) 1700ms infinite;
+    content: "\2026";
+    width: 0px;
+}
+
+@keyframes ellipsis {
+    to {
+        width: 0.8em;
+    }
+}
+
+@-webkit-keyframes ellipsis {
+    to {
+        width: 0.8em;
+    }
+}
+
+/* PFP and Grayscale Custom CSS */
+
+.gray {
+    filter: grayscale(100%);
+    transition: 1s;
+}
+
+.gray:hover {
+    filter: grayscale(0);
+    transition: 0.5s;
+}
+
+.pfp-container {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.pfp-container img {
+    width: 50%;
+}
+
+.pfp-container::before {
+    position: absolute;
+    border: 2px solid #e2e2e2;
+    border-radius: 5px;
+    top: 5%;
+    left: 30%;
+    width: 50%;
+    height: 100%;
+    content: "";
+}
+
+/* Projects and projects overlay CSS*/
+
+.project-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    background-color: #222831;
+    transition: 0.4s ease-out;
+}
+
+.project-container:hover .overlay {
+    height: 40%;
+    transition: 0.1s linear;
+}
+
+.overlay-text {
+    position: absolute;
+    width: 100%;
+    top: 60%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+/* CSS for Contact section */
+
+.closing-title {
+    color: #5299d3;
+    margin: 15rem 0 1rem;
+}
+
+.closing-text {
+    margin: 0 auto 2rem auto;
+    width: 50%;
+}
+
+.contact-button {
+    margin-bottom: 8rem;
+}
+
+/* social media bar */
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 10%;
+    left: 2%;
+}
+
+.socialsshow {
+    animation: socialsshow 1s ease;
+}
+
+@keyframes socialsshow {
+    from {
+        left: -20%
+    }
+
+    to {
+        left: 2%;
+    }
+}
+
+.icons {
+    color: #f0f6f6;
+    transition: .5s ease;
+    margin-top: 30px;
+}
+
+.icons:hover {
+    color: #5299d3;
+    transform: translateY(-3px);
+}
+
+/* Back To Top Arrow */
+
+.arrowup {
+    position: fixed;
+    right: 2%;
+    bottom: -10%;
+    /* margin: 0 4%; */
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+.arrowup:hover {
+    color: #5299d3;
+    transition: 0.5s;
+}
+
+.fa-beat-fade {
+    transition-delay: 0.5s;
+}
+
+.showbutton {
+    bottom: 10%;
+}
+
+/* neon bar */
+
+.neon-bar {
+    height: 0.3rem;
+    background-color: #5299d3;
+    border-radius: 10px;
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #222831;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #393E46;
+    border-radius: 10px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 992px) {
+    .navbar-brand {
+        width: 70%;
+    }
+
+    .logo {
+        min-width: 20%;
+    }
+
+    .introbox {
+        padding-top: 3rem;
+        padding-bottom: 0;
+    }
+
+    .loading {
+        font-size: 3rem;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .pfp-container img {
+        width: 50%;
+    }
+
+    .pfp-container::before {
+        left: 30%;
+        width: 50%;
+    }
+
+    .aboutmetext {
+        text-align: center;
+        max-width: 80%;
+        margin: 8% auto 0;
+    }
+
+    .nav-item {
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+    }
+
+    .overlay {
+        border-radius: 5px;
+    }
+
+    .project-container:hover .overlay {
+        height: 100%;
+    }
+
+    .overlay-text {
+        width: 100%;
+    }
+
+    .overlay-text p {
+        font-size: 1rem;
+    }
+
+    .closing-title {
+        margin-top: 10rem;
+    }
+
+    .closing-text {
+        min-width: 80%;
+    }
+
+    .socials {
+        position: static;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .socialsshow {
+        animation: socialsshow 1s ease;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .logo {
+        min-width: 40%;
+    }
+
+    .pfp-container img {
+        width: 80%;
+    }
+
+    .pfp-container::before {
+        left: 30%;
+        width: 70%;
+    }
+
+    .aboutbox {
+        text-align: center;
+    }
+
+    .aboutmetext {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 290px) {
+    .loading {
+        font-size: 2rem;
+        margin: 0 auto;
+        width: 40%;
+    }
+
+    .aboutbox {
+        text-align: center;
+    }
+}
